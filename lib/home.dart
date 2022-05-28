@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dashboard/header_drawer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({ Key? key }) : super(key: key);
@@ -15,6 +16,15 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.blue,
         title: const Text("Aplikasi Laima"),
       ),
+      drawer: Drawer(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              MyHeaderDrawer(),
+            ],
+          ),
+        ),
+      ),
       body: GridView.count(
         padding: const EdgeInsets.all(25),
         crossAxisCount: 2,
@@ -28,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
-                    Icon(Icons.home, size: 70, color: Colors.blueGrey),
+                    Icon(Icons.fireplace, size: 70, color: Colors.red),
                     Text("DAMKAR", style: TextStyle(fontSize: 17.0,))
                   ],
                 ),
@@ -45,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
-                    Icon(Icons.home, size: 70, color: Colors.blueGrey),
+                    Icon(Icons.emoji_transportation, size: 70, color: Colors.blue),
                     Text("Ambulance", style: TextStyle(fontSize: 17.0,))
                   ],
                 ),
@@ -62,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
-                    Icon(Icons.home, size: 70, color: Colors.blueGrey),
+                    Icon(Icons.military_tech, size: 70, color: Colors.green),
                     Text("Police", style: TextStyle(fontSize: 17.0,))
                   ],
                 ),
@@ -79,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
-                    Icon(Icons.home, size: 70, color: Colors.blueGrey),
+                    Icon(Icons.emoji_people, size: 70, color: Colors.orange),
                     Text("BPBD", style: TextStyle(fontSize: 17.0,))
                   ],
                 ),
@@ -96,7 +106,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
-                    Icon(Icons.home, size: 70, color: Colors.blueGrey),
+                    Icon(Icons.emoji_objects, size: 70, color: Colors.yellowAccent),
                     Text("PLN", style: TextStyle(fontSize: 17.0,))
                   ],
                 ),
