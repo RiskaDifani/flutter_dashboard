@@ -14,7 +14,25 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
       color: Colors.blue[600],
       width: double.infinity,
       height: 200,
-      
+      padding: const EdgeInsets.only(top: 20.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            margin: const EdgeInsets.only(bottom: 10.0),
+            height: 70.0,
+            decoration: const BoxDecoration(
+              shape: BoxShape.rectangle,
+              image: DecorationImage(
+                image: AssetImage('assets/img/logo.png')),
+            ),
+          ),
+          const Text("Berita Viral",
+          style: TextStyle(color: Colors.white, fontSize: 20),),
+          const Text("Berita Viral",
+          style: TextStyle(color: Colors.white, fontSize: 20),),
+        ],
+      ),
     );
   }
 }
