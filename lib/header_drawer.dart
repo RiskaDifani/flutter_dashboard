@@ -11,7 +11,7 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.blue[600],
+      color: Colors.green[700],
       width: double.infinity,
       height: 200,
       padding: const EdgeInsets.only(top: 20.0),
@@ -24,13 +24,13 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
             decoration: const BoxDecoration(
               shape: BoxShape.rectangle,
               image: DecorationImage(
-                image: AssetImage('assets/img/logo.png')),
+                image: AssetImage('assets/img/man.png')),
             ),
           ),
-          const Text("Berita Viral",
+          const Text("Riska Indah Difani",
           style: TextStyle(color: Colors.white, fontSize: 20),),
-          const Text("Berita Viral",
-          style: TextStyle(color: Colors.white, fontSize: 20),),
+          // const Text("Berita Viral",
+          // style: TextStyle(color: Colors.white, fontSize: 20),),
         ],
       ),
     );

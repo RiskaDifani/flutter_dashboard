@@ -13,14 +13,35 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: const Text("Aplikasi Laima"),
+        backgroundColor: Colors.green[700],
+        title: const Text("Dashboard Laima"),
       ),
+      backgroundColor: Colors.green[100],
       drawer: Drawer(
         child: SingleChildScrollView(
           child: Column(
             children: [
               const MyHeaderDrawer(),
+              ListTile(
+                leading: const Icon(Icons.people),
+                title: const Text("Profil"),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: const Icon(Icons.home),
+                title: const Text("Dashboard"),
+                onTap: () {Navigator.pop(context);},
+              ),
+              ListTile(
+                leading: const Icon(Icons.tty),
+                title: const Text("Lapor"),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: const Icon(Icons.logout),
+                title: const Text("Log out"),
+                onTap: () {},
+              ),
             ],
           ),
         ),
@@ -33,7 +54,7 @@ class _HomePageState extends State<HomePage> {
             margin: const EdgeInsets.all(8),
             child: InkWell(
               onTap: (){},
-              splashColor: Colors.blue,
+              splashColor: Colors.blueGrey,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -50,7 +71,7 @@ class _HomePageState extends State<HomePage> {
             margin: const EdgeInsets.all(8),
             child: InkWell(
               onTap: (){},
-              splashColor: Colors.blue,
+              splashColor: Colors.blueGrey,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -67,7 +88,7 @@ class _HomePageState extends State<HomePage> {
             margin: const EdgeInsets.all(8),
             child: InkWell(
               onTap: (){},
-              splashColor: Colors.blue,
+              splashColor: Colors.blueGrey,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -84,7 +105,7 @@ class _HomePageState extends State<HomePage> {
             margin: const EdgeInsets.all(8),
             child: InkWell(
               onTap: (){},
-              splashColor: Colors.blue,
+              splashColor: Colors.blueGrey,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -101,7 +122,7 @@ class _HomePageState extends State<HomePage> {
             margin: const EdgeInsets.all(8),
             child: InkWell(
               onTap: (){},
-              splashColor: Colors.blue,
+              splashColor: Colors.blueGrey,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,

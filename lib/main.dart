@@ -13,5 +13,6 @@ class MyApp extends StatelessWidget {
       title: 'Aplikasi Laima', 
       home: HomePage(),
     );
+    
   }
 }
