@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dashboard/ambulans.dart';
+import 'package:flutter_dashboard/bpbd.dart';
 import 'package:flutter_dashboard/damkar.dart';
 import 'package:flutter_dashboard/header_drawer.dart';
 import 'package:flutter_dashboard/damkar.dart';
@@ -111,7 +112,9 @@ class _HomePageState extends State<HomePage> {
           Card(
             margin: const EdgeInsets.all(8),
             child: InkWell(
-              onTap: (){},
+              onTap: (){
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => Bpbd()));
+              },
               splashColor: Colors.blueGrey,
               child: Center(
                 child: Column(
