@@ -4,6 +4,7 @@ import 'package:flutter_dashboard/bpbd.dart';
 import 'package:flutter_dashboard/damkar.dart';
 import 'package:flutter_dashboard/header_drawer.dart';
 import 'package:flutter_dashboard/damkar.dart';
+import 'package:flutter_dashboard/profil.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({ Key? key }) : super(key: key);
@@ -29,7 +30,9 @@ class _HomePageState extends State<HomePage> {
               ListTile(
                 leading: const Icon(Icons.people),
                 title: const Text("Profil"),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Profil()));
+                },
               ),
               ListTile(
                 leading: const Icon(Icons.home),
