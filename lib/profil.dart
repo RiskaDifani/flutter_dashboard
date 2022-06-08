@@ -46,7 +46,13 @@ class Profil extends StatelessWidget {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
-                          Icon(Icons.location_on, color: Colors.white70, size: 17,)
+                          Icon(Icons.location_on, color: Colors.white70, size: 17,),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 4.0),
+                            child: Text('Cikarang, Bekasi',
+                            style: TextStyle(color: Colors.white70,fontSize: 14, letterSpacing: 3, wordSpacing: 4)
+                            ),
+                          ),
                         ],
                       ),
                       ),
@@ -55,7 +61,55 @@ class Profil extends StatelessWidget {
                   ),
               ],
             ),
-          ],
+            Container(
+                        color: Color.fromARGB(255, 190, 233, 192),
+                        padding: EdgeInsets.all(10.0),
+                        margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 25.0),
+                        child: Row(
+                          children: <Widget>[
+                            Icon(
+                              Icons.phone,
+                              color: Colors.green,
+                            ),
+                            SizedBox(
+                              width: 10.0,
+                            ),
+                            Text(
+                              '+6288 77325 73714',
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15.0
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        color: Color.fromARGB(255, 190, 233, 192),
+                        padding: EdgeInsets.all(10.0),
+                        margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 25.0),
+                        child: Row(
+                          children: <Widget>[
+                            Icon(
+                              Icons.email,
+                              color: Colors.green,
+                            ),
+                            SizedBox(
+                              width: 10.0,
+                            ),
+                            Text(
+                              'stefan123@gmail.com',
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15.0
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+          ], 
         ),
       ),
     );
