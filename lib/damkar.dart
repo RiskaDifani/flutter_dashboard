@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dashboard/tentang_damkar.dart';
 
 class Damkar extends StatefulWidget {
   @override
@@ -27,7 +28,9 @@ class _DamkarState extends State<Damkar> {
                     child: Card(
                       margin: EdgeInsets.all(8.0),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => TentangDamkar()));
+                        },
                         splashColor: Colors.green,
                         child: Center(
                           child: Column(

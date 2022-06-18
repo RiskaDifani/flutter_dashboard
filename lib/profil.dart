@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dashboard/home.dart';
 
 class Profil extends StatelessWidget {
   const Profil({Key? key}) : super(key: key);
@@ -61,6 +62,7 @@ class Profil extends StatelessWidget {
                   ),
               ],
             ),
+            //NIK
             Container(
                         color: Color.fromARGB(255, 190, 233, 192),
                         padding: EdgeInsets.all(10.0),
@@ -68,14 +70,14 @@ class Profil extends StatelessWidget {
                         child: Row(
                           children: <Widget>[
                             Icon(
-                              Icons.phone,
+                              Icons.person_outline,
                               color: Colors.green,
                             ),
                             SizedBox(
                               width: 10.0,
                             ),
                             Text(
-                              '+6288 77325 73714',
+                              '1234',
                               style: TextStyle(
                                 color: Colors.grey,
                                 fontWeight: FontWeight.bold,
@@ -85,6 +87,7 @@ class Profil extends StatelessWidget {
                           ],
                         ),
                       ),
+                      //email
                       Container(
                         color: Color.fromARGB(255, 190, 233, 192),
                         padding: EdgeInsets.all(10.0),
@@ -109,6 +112,44 @@ class Profil extends StatelessWidget {
                           ],
                         ),
                       ),
+                      // tanggal lahir
+                      Container(
+                        color: Color.fromARGB(255, 190, 233, 192),
+                        padding: EdgeInsets.all(10.0),
+                        margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 25.0),
+                        child: Row(
+                          children: <Widget>[
+                            Icon(
+                              Icons.calendar_view_month,
+                              color: Colors.green,
+                            ),
+                            SizedBox(
+                              width: 10.0,
+                            ),
+                            Text(
+                              '08-juni-2022',
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15.0
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+            SizedBox(height: 10),
+              ElevatedButton(
+                  child: Text("Kembali",
+                      style: TextStyle(color: Colors.black, fontSize: 17)),
+                  style: ElevatedButton.styleFrom(
+                    padding: EdgeInsets.only(right: 30, left: 30),
+                    primary: Colors.greenAccent,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(16.0))),
+                  ),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+                  }),
           ], 
         ),
       ),
